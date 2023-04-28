@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <h1>Recipes</h1>
+    <% for (let i = 0; i < recipes.length; i++) { %>
+      <div class="recipe">
+        <h2><%= recipes[i].label %></h2>
+        <img src="<%= recipes[i].image %>" alt="<%= recipes[i].label %>">
+        <p><%= recipes[i].source %></p>
+        <a href="<%= recipes[i].url %>" target="_blank">View Recipe</a>
+      </div>
+    <% } %>
+  </body>
+</html>
